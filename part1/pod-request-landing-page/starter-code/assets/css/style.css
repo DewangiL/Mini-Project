@@ -1,0 +1,301 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #fff;
+    background-color: #000010;
+    height: 100vh;
+    }
+   
+.logo{
+    padding-left: 180px;
+    padding-top: 90px;
+}
+.main{
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1440px;
+    background-image:url("../desktop/image-host.jpg");
+    background-repeat:no-repeat;
+    background-position-x:600px;
+    background-position-y:120px;
+    background-position: cover;
+}
+.dots{
+    background-image: url("../desktop/bg-pattern-dots.svg");
+   height: 105px;
+   width: 232px;
+   float: right;
+   margin-top: -70px;
+   margin-left: -10px;
+}
+.container{
+    background-color: BLACK;
+    width:723px;
+    max-width: 100%;
+    height:520px;
+    margin-left: 180px;
+    margin-top: 100px;
+}
+.container h1{
+    font-size: 52px;
+    color:#54E6AF;
+    line-height: 62px;
+    padding-top: 60px;
+    font-family: 'Chivo', sans-serif;
+}
+.container h1 span{
+    font-size: 52px;
+    color:#FFFFFF;
+    font-family: 'Chivo', sans-serif;
+}
+.container p{
+    font-size: 15px;
+    line-height: 28px;
+    width: 450px;
+    padding-top: 10px;
+    text-align:justify;
+    color:#C2CBE5;
+    opacity: 0.7;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+form{
+    padding-top: 50px;
+    border: black;
+
+}
+input{
+   padding-left: 30px;
+   
+}
+input:focus{
+    outline: none;
+    font-weight: bold;
+    color: #fff;
+}
+.email{
+    width:380px;
+    height: 50px;
+    background-color: #2C344B;
+    border:none;
+    border-radius: 30px;
+}
+
+.email::placeholder{
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 1px; 
+    opacity: 0.6;
+}
+.submit{
+    background-color: #54E6AF;
+    width:150px;
+    height: 50px;
+    border-radius: 30px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    border:none;
+    margin-left: -152px;
+    cursor: pointer;
+    padding-right: 130px;
+}
+.submit:hover{
+    background-color: #B3FFE2 ;
+    font-weight: bold;
+    color: #121725;
+}
+#e-add{
+    color: #FB3E3E;
+    margin-left: 10px;
+    margin-top: -5px;
+    font-size: 12px;
+    font-weight: 700;
+    opacity: 0.9;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.last{
+    padding-top: 50px;
+    letter-spacing: 30px;
+    opacity: 0.5;
+}
+@media screen and (min-width: 427px) and (max-width:768px){
+   
+    .logo{
+        padding: 0;
+        margin: 0;
+        padding-left: 30px;
+        padding-top: 10px;
+    }
+    .container{
+        margin-left: 50px;
+        margin-top: 160px; 
+        width: 630px;
+    }
+    .dots{
+        margin: 0;
+        padding: 0;
+       float: left;
+       margin-top: 170px;
+    }
+    .main{
+        background-image: url("../tablet/image-host.jpg");
+        background-position-x:280px;
+        background-position-y:0px;
+    }
+    .container h1{
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width:1024px){
+    .container{
+        margin-left: 40px;
+    }
+    .main{
+        background-position-x:290px;
+        background-position-y:100px;
+    }
+    .logo{
+        padding-left: 30px;
+        padding-top: 70px;
+    }
+    
+}
+
+@media screen and (min-width: 51px) and (max-width:469px){
+    body,html{
+       height: 100%;
+       overflow: hidden;
+    }
+    .main{
+      background-image: none;
+     
+    }
+    .logo{
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+        padding: 0;
+    }
+    .container{
+        background-color: unset;
+        margin: 0;
+        padding: 0;
+        margin: 0 auto;
+        justify-content: center;
+       
+    }
+    .container h1 span{
+        font-size: 24px;
+    }
+    .container h1{
+        font-size: 24px;
+        text-align: center;
+        line-height: 40px;
+        padding-left: 0px;
+    }
+    .container p{
+        font-size: 15px;
+        line-height: 25px;
+        width:fit-content;
+        text-align: center;
+        color: #C2CBE5;
+    }
+    form{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+   .email{
+       width: 90%;
+       margin-left: 17px;
+   }
+    .submit{
+      padding: 0;
+      margin: 0;
+      margin-left: 17px;
+      width: 90%;
+    }
+   body{
+       background-image: url("../mobile/image-host.jpg");
+       background-repeat: no-repeat;
+       background-size:cover;
+       background-color: #07080ce8;
+       background-blend-mode: overlay;
+   }
+  .dots{
+     background-image: unset;
+  }
+  .last{
+      position: absolute;
+      margin-top: -180px;
+      width: 100%;
+      height: unset;
+      padding: 0px;
+      letter-spacing: 10px;
+      justify-content: center;
+      text-align: center;
+  }
+  .last img{
+      width: 56px;
+  }
+  #e-add{
+      display: block;
+      position: absolute;
+      margin-top: 120px;
+      margin-left: 30px;
+  }
+  
+}

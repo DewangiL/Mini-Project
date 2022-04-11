@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="icon" href="assets/images/bg-pattern.svg">
+   
+    <title>Pricing Component</title>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Simple, traffic-based pricing</h1>
+            <p>Sign-up for our 30-day trial, No credit card required.</p>
+        </header>
+
+        <aside>
+            <div class="tarrif">
+                <div class="page-views"><span>100k</span> pageviews</div>
+                <div class="price">
+                    <span>$<span class="pricefix">16</span>.00</span>
+                    <span class="month"> /month</span>
+                </div>
+            </div>
+
+            <div class="progress">
+                <div class="progress-bar" id="new">
+                    <input type="range" mim="10" max="100" value="50" class="myrange" id="back">
+                </div>
+
+                <div class="monthly">
+                    <span>Monthly Billing</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                    <span>Yearly Billing</span>
+                    <span class="discount">25% discount</span>
+                </div>
+            </div>
+
+            <hr>
+            <div class="start">
+                <ul>
+                  <li>Unlimited websites</li>
+                  <li class="next">100% data ownership</li>
+                  <li>Email reports</li>
+                </ul>
+                <button>Start my trial</button>
+              </div>
+
+        </aside>
+
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

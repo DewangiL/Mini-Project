@@ -1,0 +1,141 @@
+.body{
+    background-color: #E6EFF5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+  }
+  .top{
+    margin:auto center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+ 
+  .container{
+    max-width: 100%;
+  
+  }
+  .main{
+    border-radius: 10px 10px 0px 0px;
+    background-color: #FFFFFF;
+    padding: 30px 0px 40px 0px;
+    padding-left: 40px;
+    z-index: 99;
+  }
+  .main h1{
+    color: #2AB3B1;
+    font-size: 20px;
+    letter-spacing: -0.3px;
+    font-weight: 700;
+  }
+  .main h3{
+    color: #C0DF33;
+    font-size: 16px;
+    letter-spacing: -0.22px;
+    padding-top: 20px;
+    font-weight: 700;
+  }
+  .main p{
+    color:#9AA7BE;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    line-height: 26px;
+    width:540px;
+    padding-top: 10px;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+} 
+  .flex-item-left {
+    background-color: #2AB3B1;
+    padding: 40px;
+    padding-top: 30px;
+    height: 259px;
+    color: #fff;
+    line-height: 30px;
+  
+}
+.flex-item-left h1{
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: -0.22px;
+  font-weight: 700;
+}
+.flex-item-left span{
+    font-size: 32px;
+    color: #fff;
+    letter-spacing: -0.22px;
+    font-weight: 700;
+}
+.flex-item-left h6{
+    font-size: 14px;
+    padding-top: 10px;
+    letter-spacing: -0.2px;
+    font-weight: 300;
+    color: rgba(245, 245, 245, 0.479);
+}
+.btn{
+    background-color: #C0DF33;
+    color:#fff;
+    width:200px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    font-size: 16px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 30px;
+
+}
+
+  .flex-item-right {
+    background-color: #2ab3b1ce;
+    padding: 40px;
+    padding-top: 30px;
+    text-align: left;
+    color: #fff;
+    height: 259px;
+    
+  }
+  .flex-item-right h1{
+      font-size: 18px;
+  }
+  .flex-item-right p{
+      font-size: 14px;
+      width: 238px;
+      text-align: left;
+      padding-top: 20px;
+      color: rgba(255, 255, 255, 0.486)
+  }
+  
+  @media (max-width: 600px) {
+    .container{
+      padding: 10px;
+      box-shadow: none;
+    }
+    .flex-container {
+      flex-direction: column;
+    }
+    .flex-item-left{
+      height: max-content;
+    }
+    .flex-item-right{
+      height: max-content;
+    }
+    .main p{
+      width: 250px;
+    }
+    .main h3{
+      width: 200px;
+    }  
+    
+  }
+  
+ 

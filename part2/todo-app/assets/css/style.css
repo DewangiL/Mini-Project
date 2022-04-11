@@ -1,0 +1,237 @@
+
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    font-size: 18px;
+    background-image: url(../images/bg-desktop-dark.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 300px;
+    background-color: #181824;
+    transition: background-color 0.4s, background-image 0.4s;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2.3em;
+    letter-spacing: 14px;
+    color: white;
+}
+
+.global-wrapper {
+    width: 600px;
+    margin: 75px auto;
+}
+
+
+input[type="text"] {
+    outline: none;
+    border: none;
+    background-color: #25273C;
+    color: #B8BAD1;
+    font-size: 1em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+input[type="checkbox"] {
+    opacity: 0;
+}
+
+input[type="checkbox"] + label::after {
+    display: block;
+    content: "";
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid #2F3146;
+    opacity: 1;
+    transition: border 0.4s;
+}
+
+input[type="checkbox"]:not(:checked):hover + label::after {
+    border: 2px solid hsla(192, 100%, 67%, 50%);
+}
+
+input[type="checkbox"]:checked + label::after {
+    background: url(../images/icon-check.svg), linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+input[type="checkbox"]:checked + label + p {
+    text-decoration: line-through;
+    color: #585975;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.add-todo {
+    width: 100%;
+    padding: 20px 20px 20px 0;
+    background-color: #25273C;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    margin-bottom: 50px;
+    transition: color 0.4s, background-color 0.4s;
+}
+
+.add-todo input[type="text"] {
+    margin-left: 30px;
+    width: 100%;
+    transition: color 0.4s, background-color 0.4s;
+}
+
+.todo-task:nth-child(2), .nothing {
+    border-radius: 6px 6px 0 0;
+}
+
+.todo-task, .nothing {
+    width: 100%;
+    padding: 20px 20px 20px 0;
+    background-color: #25273C;
+    display: flex;
+    align-items: center;
+    color: #B8BAD1;
+    transition: background-color 0.4s;
+    border-bottom: 1px solid #585975;
+    overflow-x: hidden;
+}
+
+.todo-task p, .nothing p {
+    margin-left: 30px;
+}
+
+.todo-task:hover .close {
+    
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.todo-task .close {
+    margin-left: auto;
+    opacity: 0;
+    transition: opacity 0.4s;
+    pointer-events: none;
+}
+
+.bottom-menu {
+    width: 100%;
+    padding: 20px;
+    background-color: #25273C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 6px 6px;
+    color: #585975;
+    font-size: 0.9em;
+    transition: background-color 0.4s, color 0.4s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.bottom-menu p {
+    margin: 0 7px;
+}
+
+.bottom-menu p:not(#item-nb-p) {
+    cursor: pointer;
+    transition: color 0.4s;
+}
+
+.bottom-menu p:not(#item-nb-p):hover {
+    color: #B8BAD1;
+}
+
+.bottom-menu p.active {
+    color: #4B7AD6;
+}
+
+#item-nb-p {
+    margin-right: auto;
+}
+
+#clear-completed {
+    margin-left: auto;
+}
+
+
+.night-mode {
+    cursor: pointer;
+}
+
+.night-mode.light {
+    content: url(../images/icon-moon.svg);
+}
+
+body.light {
+
+    background-image: url(../images/bg-desktop-light.jpg);
+    background-color: #FAFAFA;
+}
+
+.todo-task.light, .nothing.light, .add-todo.light, .add-todo.light input, .bottom-menu.light, .mobile-submenu.light {
+    background-color: white;
+    color: #504F5F;
+}
+
+.bottom-menu.light {
+    color: #B8BAD1;
+}
+
+.bottom-menu.light p:not(#item-nb-p):hover {
+    color: #504F5F;
+}
+
+.todo-task.light, .nothing.light {
+    border-bottom: 1px solid #E5E5E7;
+}
+
+
+@media screen and (max-width: 650px) {
+    .global-wrapper {
+        width: 90%;
+    }
+
+    .mobile-submenu {
+        width: 100%;
+        height: 60px;
+        margin-top: 20px;
+        background-color: #25273C;
+        border-radius: 6px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        transition: background-color 0.4s;
+    }
+
+    #show-all, #show-completed, #show-active {
+        position: absolute;
+        bottom: -60px;
+    }
+
+    #show-all {
+        right: 79%;
+    }
+
+    #show-active {
+        right: 49%;
+    }
+
+    #show-completed {
+        right: 13%;
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  
+  <title>Base Apparel coming soon page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+</head>
+  <body>
+    <main>
+      <div class="header">
+        <a href="#"><img class="logo" src="assets/images/logo.svg" alt="Base Apparel logo"></a>
+      </div>
+      <div class="hero"></div>
+      <div class="text">
+        <h1><span>We're </span>coming soon</h1>
+        <p class="text-main"> Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+
+        <form id="email-form" novalidate>
+          <input id="email" type="email" placeholder="Email Address" aria-describedby="error-msg">
+          <img class="error invisible" src="assets/images/icon-error.svg" alt="Error icon">
+          <p id="error-msg" class="error-msg invisible">Please provide a valid email</p>
+          <button type="submit">
+            <img src="assets/images/icon-arrow.svg" alt="Right arrow">
+          </button>
+        </form>
+      </div>
+  </main>
+  <script src="assets/js/script.js" defer></script>
+</body>
+</html>

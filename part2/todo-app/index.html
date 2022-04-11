@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/jquery/jquery-ui.js">
+  <link rel="stylesheet" href="assets/jquery/jquery-ui.css">
+  <link rel="stylesheet" href="assets/jquery/jquery-1.12.4.js">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&family=Inter:wght@100;200&family=Josefin+Sans:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Open+Sans&family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  
+  <title>Todo app</title>
+</head>
+<body>
+ 
+  <div class="global-wrapper">
+    <header class="header-wrapper">
+      <h1>Todo</h1>
+      <img class="night-mode" src="assets/images/icon-sun.svg">
+    </header>
+
+    <!-- First row, let the user add a new task -->
+    <div class="add-todo">
+      <!-- <input type="checkbox" id="new-todo-check"> -->
+      <label for="new-todo-check"></label>
+      <input type="text" id="new-todo" placeholder="Add a task...">
+    </div>
+
+    <!-- Second row, displays all tasks -->
+    <div class="todo-list">
+     
+    </div>
+
+    <!-- Last row, alllows the user to manage his tasks -->
+    <div class="bottom-menu">
+      <p id="item-nb-p"><span id="item-nb">0</span> items left</p>
+      <p id="show-all">All</p>
+      <p id="show-active">Active</p> 
+      <p id="show-completed">Completed</p>
+      <p id="clear-completed">Clear Completed</p>
+    </div>
+
+    <!-- Only showing on mobile mode < 650px -->
+    <div class="mobile-submenu"></div>
+  </div>
+  <script src="assets/js/script.js" defer></script>
+</body>
+</html>
